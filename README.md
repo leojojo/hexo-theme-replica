@@ -1,3 +1,5 @@
+leojojo's fork of ↓
+
 # Replica [![LICENSE MIT](https://img.shields.io/badge/LICENSE-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 Github style replication for hexo theme. 
 
