@@ -16,3 +16,7 @@ rss_dir: atom.xml
 
 # widget
 ga: UA-105154164-2
+
+# hexo-graphviz 
+graphviz:
+  enable: true
