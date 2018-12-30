@@ -1,22 +1,27 @@
-# left-side user profile
-avatar: https://ja.gravatar.com/userimage/58582291/557bcfb812bf7e8083f2346de7d70334.jpg?size=10000
+# Navigation
+## Profile Bar
+avatar: https://ja.gravatar.com/userimage/58582291/557bcfb812bf7e8083f2346de7d70334.jpg?size=480
 location:
 email: leojojo@sfc.wide.ad.jp
 social:
   github: leojojo
   twitter: meganepikumin
-
-# navbar menu
+## Navbar
 menu:
- archives: false
- tags: true
- categories: true
+  archives: false
+  tags: true
+  categories: true
 
-rss_dir: atom.xml
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: replica
 
 # widget
+rss_dir: atom.xml
 ga: UA-105154164-2
-
-# hexo-graphviz 
+disqus: blog-leojojo-me
+embedly:
+  enable: true
 graphviz:
   enable: true

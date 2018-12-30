@@ -1,6 +1,6 @@
 <%
 var tags = page.tags ? page.tags.data : '';
-var twitter = '@'+(config.social.twitter || theme.social.twitter);
+var twitter = config.social ? '@'+(config.social.twitter) : '';
 %>
 
 <head>
