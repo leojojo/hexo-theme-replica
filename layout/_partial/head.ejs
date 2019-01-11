@@ -11,27 +11,18 @@ var twitter = config.social ? '@'+(config.social.twitter) : '';
   <title>
     <%= (page.title || config.title) + (page.title ? ' | ' + config.title : '') %>
   </title>
-  <meta name="description" content="<%= config.description %>">
-  <%
-  if(tags){ %>
-  <meta name="keywords" content="
-  <%= tags.map(function(tag) {
-    return tag.name
-  }).join(',') %>
-  ">
-  <% } %>
-  <meta name="author" content="<%= config.author %>">
 
+  <meta name="author" content="<%= config.author %>">
   <meta http-equiv="Cache-Control" content="no-transform"/>
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
-  <link rel="icon" type="image/x-icon" href="<%= config.favicon %>">
+  <link rel="icon" type="image/x-icon" href="<%= config.root %><%= config.favicon %>">
   <link rel="stylesheet" href="<%= config.root %>css/main.css">
   <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <%- partial('_widget/google-analytics') %>
   <%- partial('_widget/baidutongji') %>
-
   <%- open_graph({twitter_site: twitter}) %>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>

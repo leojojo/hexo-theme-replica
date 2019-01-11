@@ -18,11 +18,11 @@ var flagcounter_url = config.flagcounter_url;
       <li>© 2018 <%= config.author %></li>
       <li><a href="<%= url %>">Home</a></li>
       <% if(github){ %>
-      <li><a href="<%= github %>">Github</a></li>
+      <li><a href="//github.com/<%= github %>">Github</a></li>
       <% }if(weibo){ %>
       <li><a href="<%= weibo %>">Weibo</a></li>
       <% }if(linkedin){ %>
-      <li><a href="<%= linkedin %>">Linkedin</a></li>
+      <li><a href="//www.linkedin.com/in/<%= linkedin %>">Linkedin</a></li>
       <% } %>
     </ul>
     <div class="footer-theme-info">
@@ -32,7 +32,7 @@ var flagcounter_url = config.flagcounter_url;
     </div>
     <% if(flagcounter_url){ %>
     <div class="footer-pageview">
-        <a href="https://info.flagcounter.com/mx4Y">
+        <a href="//info.flagcounter.com/mx4Y">
           <img src="<%= flagcounter_url %>">
         </a>
     </div>
